@@ -1,2 +1,2 @@
 # programovani
-programovani
+programovani ve skole
