@@ -1,7 +1,7 @@
 string = str(input("Zadejte heslo: "))
 cislo = 0
 if len(string) < 8:
-    
+    cislo = cislo + 1  
 elif not any(char.isupper() for char in string):
     cislo = cislo + 1
 elif not any(char.islower() for char in string):
