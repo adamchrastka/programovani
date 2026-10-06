@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        table {
+            background-color: #1eff00;
+        }
+        th {
+            padding: 8px;
+        }
+
+        .table-title {
+            text-align: center;
+            background-color: #1eff00;
+            border-radius: 12px;
+        }
+    </style>
+    <form>
+    <table>
+        <tr>
+            <th colspan="2" class="table-title">Evidence psa</th>
+        </tr>
+        <tr><th>Majitel psa </th><th><input type="text" placeholder="Zadejte jméno majitele"></th></tr>
+        <tr><th>Jméno psa </th><th><input type="text" placeholder="Zadejte jméno psa"></th></tr>
+        <tr><th>Datum narození</th><th><input type="date"></th></tr>
+        <tr><th>Krajské město</th><th><select name="krajske-mesto" id="krajske-mesto">
+                        <option value="Praha">Praha</option>
+                        <option value="Brno">Brno</option>
+                        <option value="Ostrava">Ostrava</option>
+                        <option value="Plzeň">Plzeň</option>
+                        <option value="Liberec">Liberec</option>
+                        <option value="Olomouc">Olomouc</option>
+                        <option value="Ústí nad Labem">Ústí nad Labem</option>
+                        <option value="Hradec Králové">Hradec Králové</option>
+                        <option value="Pardubice">Pardubice</option>
+                        <option value="Zlín">Zlín</option>
+                        <option value="Jihlava">Jihlava</option>
+                        </select></th></tr>
+        <tr><th>Pohlaví</th><th><input type="radio" name="pohlavi" value="samec"> Samec
+                <input type="radio" name="pohlavi" value="samice"> Samice
+            </th></tr>
+        <tr><th>Rasa</th><th><input type="text" placeholder="Zadejte rasu psa"></th></tr>
+        <tr><th>Barva</th><th><input type="text" placeholder="Zadejte barvu psa"></th></tr>
+        <tr><th>Vlastnosti</th><th><input type="checkbox" name="vlastnosti" value="vesely"> Veselý
+                <input type="checkbox" name="vlastnosti" value="pratelsky"> Přátelský
+                <input type="checkbox" name="vlastnosti" value="hravy"> Hravý
+                <input type="checkbox" name="vlastnosti" value="klidny"> Klidný</br>
+                <input type="checkbox" name="vlastnosti" value="poslusny"> Poslušný
+                <input type="checkbox" name="vlastnosti" value="mazlivy"> Mazlivý
+                <input type="checkbox" name="vlastnosti" value="statecny"> Statečný
+                <input type="checkbox" name="vlastnosti" value="zvedavy"> Zvědavý</br>
+                <input type="checkbox" name="vlastnosti" value="chytry"> Chytrý
+                <input type="checkbox" name="vlastnosti" value="energicky"> Energický
+                <input type="checkbox" name="vlastnosti" value="bojacny"> Bojácný
+            </th></tr>
+        <tr><th colspan="2" class="table-title"><input type="submit" value="Odeslat"><input type="reset" value="Resetovat"></th></tr>
+
+    </table>
+    </form>
+</body>
+</html>
