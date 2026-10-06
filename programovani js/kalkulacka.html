@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        
+    </style>
+    <script>
+    const vystup = document.createElement("input");
+    vystup.type = "text";
+    vystup.id = "vystup";
+    document.body.appendChild(vystup);
+    </script>
+    </br>
+    <script>
+    const buttonJedna = document.createElement("button");
+    buttonJedna.type = "button";
+    buttonJedna.textContent = "1";
+    buttonJedna.addEventListener("click", () => {
+        vystup.value += "1";
+    });
+    document.body.appendChild(buttonJedna);
+    const buttonDva = document.createElement("button");
+    buttonDva.type = "button";
+    buttonDva.textContent = "2";
+    document.body.appendChild(buttonDva);
+    buttonDva.addEventListener("click", ()=> {
+        vystup.value += "2";
+    });
+    const buttonTri = document.createElement("button");
+    buttonTri.type = "button";
+    buttonTri.textContent = "3";
+    document.body.appendChild(buttonTri);
+    buttonTri.addEventListener("click", () => {
+        vystup.value += "3";
+    });
+    </script>
+    </br>
+    <script>
+    const buttonCtyri = document.createElement("button");
+    buttonCtyri.type = "button";
+    buttonCtyri.textContent = "4";
+    buttonCtyri.addEventListener("click", () => {
+        vystup.value += "4";
+    });
+    document.body.appendChild(buttonCtyri);
+    const buttonPet = document.createElement("button");
+    buttonPet.type = "button";
+    buttonPet.textContent = "5";
+    buttonPet.addEventListener("click", () => {
+        vystup.value += "5";
+    });
+    document.body.appendChild(buttonPet);
+    const buttonSest = document.createElement("button");
+    buttonSest.type = "button";
+    buttonSest.textContent = "6";
+    buttonSest.addEventListener("click", () => {
+        vystup.value += "6";
+    });
+    document.body.appendChild(buttonSest);
+    </script>
+    </br>
+    <script>
+    const buttonSedm = document.createElement("button");
+    buttonSedm.type = "button";
+    buttonSedm.textContent = "7";
+    buttonSedm.addEventListener("click", () => {
+        vystup.value += "7";
+    });
+    document.body.appendChild(buttonSedm);
+    const buttonOsm = document.createElement("button");
+    buttonOsm.type = "button";
+    buttonOsm.textContent = "8";
+    buttonOsm.addEventListener("click", () => {
+        vystup.value += "8";
+    });
+    document.body.appendChild(buttonOsm);
+    const buttonDevět = document.createElement("button");
+    buttonDevět.type = "button";
+    buttonDevět.textContent = "9";
+    buttonDevět.addEventListener("click", () => {
+        vystup.value += "9";
+    });
+    document.body.appendChild(buttonDevět);
+    const buttonNula = document.createElement("button");
+    buttonNula.type = "button";
+    buttonNula.textContent = "0";
+    buttonNula.addEventListener("click", () => {
+        vystup.value += "0";
+    });
+    document.body.appendChild(buttonNula);
+    const buttonPlus = document.createElement("button");
+    buttonPlus.type = "button";
+    buttonPlus.textContent = "+";
+    buttonPlus.addEventListener("click", () => {
+        vystup.value += "+";
+    });
+    document.body.appendChild(buttonPlus);
+    const buttonMinus = document.createElement("button");
+    buttonMinus.type = "button";
+    buttonMinus.textContent = "-";
+    buttonMinus.addEventListener("click", () => {
+        vystup.value += "-";
+    });
+    document.body.appendChild(buttonMinus);
+    const buttonRovnaSe = document.createElement("button");
+    buttonRovnaSe.type = "button";
+    buttonRovnaSe.textContent = "=";
+    buttonRovnaSe.addEventListener("click", () => {
+        try {
+            const vysledek = eval(vystup.value);
+            vystup.value = Number.isFinite(vysledek) ? vysledek : "Chyba";
+        } catch (error) {
+            vystup.value = "Chyba";
+        }
+    });
+
+    document.body.appendChild(buttonRovnaSe);
+    const buttonVynulovat = document.createElement("button");
+    buttonVynulovat.type = "button";
+    buttonVynulovat.textContent = "C";
+    buttonVynulovat.addEventListener("click", () => {
+        vystup.value = "";
+    });
+    document.body.appendChild(buttonVynulovat);
+    const buttonKrat = document.createElement("button");
+    buttonKrat.type = "button";
+    buttonKrat.textContent = "*";
+    buttonKrat.addEventListener("click", () => {
+        vystup.value += "*";
+    });
+    document.body.appendChild(buttonKrat);
+    const buttonDeleno = document.createElement("button");
+    buttonDeleno.type = "button";
+    buttonDeleno.textContent = "/";
+    buttonDeleno.addEventListener("click", () => {
+        vystup.value += "/";
+    });
+    document.body.appendChild(buttonDeleno);
+    </script>
+    </br>
+    
+</body>
+</html>
